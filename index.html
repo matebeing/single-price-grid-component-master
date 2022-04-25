@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <link rel="stylesheet" href="index.css">
 </head>
   <body>
     <main>
@@ -18,12 +18,16 @@
       </div>
       <div>
         <section>
-          <h1>Monthly Subscription</h1>
-          <span>&dollar;</span><span>29 per month</span>
+          <h2>Monthly Subscription</h1>
+          <div class="plan">
+            <span id="planValue">&dollar;29</span>
+            <span id="planTime"> per month</span>
+          </div>    
           <p>Full access for less than &dollar;1 a day</p>
+          <a href="#">Sign Up</a>
         </section>
         <section>
-          <h1>Why Us</h1>
+          <h2>Why Us</h1>
           <ul>
             <li>Tutorials by industry experts</li>
             <li>Peer &amp; expert code review</li>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Karla', sans-serif;
+
+    height: 100vh;
+
+    background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: 650px;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin: 30px;
+}
+
+main > div:first-child {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+main > div:first-child > h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+main > div:first-child > span {
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+
+main > div:first-child > p {
+    width: 95%;
+    color: hsl(218, 22%, 67%);
+}
+
+main > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+
+main > div:last-child > section:first-child {
+    padding: 2rem;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+}
+#planValue {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#planTime {
+    color: hsl(0, 1%, 72%);
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+main > div:last-child > section:last-child {
+    padding: 2rem;
+    background-color: #4abebd;
+}
+
+a { 
+    display: block;
+
+    padding: 1em;
+    width: auto;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+
+    border-radius: 0.32em;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+
+    color: hsl(204, 43%, 93%);
+    font-size: 15px;
+}
+
+@media only screen and (max-width:475px) {
+    body {
+        height: auto;
+    }
+
+    main > div:last-child {
+        font-size: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    main > div:last-child > section:first-child > p {
+        font-size: 16px;
+    }
+
+    a {
+        width: auto;
+        font-size: 17px;
+
+        margin-top: 2em;
+        padding: 1em;
+    }
+
+}
